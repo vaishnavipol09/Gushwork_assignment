@@ -1,3 +1,5 @@
+// ---------------- IMAGE SLIDER ----------------
+
 let images = [
 "./images/1.jpg",
 "./images/2.jpg",
@@ -9,32 +11,47 @@ let images = [
 let current = 0;
 
 function showImage(){
-document.getElementById("mainImg").src = images[current];
+const img = document.getElementById("mainImg");
+if(img){
+img.src = images[current];
+}
 }
 
 function nextImage(){
-current++;
-if(current >= images.length){
-current = 0;
-}
+
+current = (current + 1) % images.length;
+
 showImage();
+
 }
 
 function prevImage(){
-current--;
-if(current < 0){
-current = images.length - 1;
-}
+
+current = (current - 1 + images.length) % images.length;
+
 showImage();
+
 }
 
+// Thumbnail change
 
-// Frequently Asked Questions
 function changeImage(element){
-document.getElementById("mainImg").src = element.src;
+
+const img = document.getElementById("mainImg");
+
+if(img){
+img.src = element.src;
 }
+
+}
+
+
+
+// ---------------- FAQ SECTION ----------------
 
 const faqItems = document.querySelectorAll(".faq-question");
+
+if(faqItems.length > 0){
 
 faqItems.forEach(button => {
 
@@ -48,52 +65,76 @@ item.classList.toggle("active");
 
 });
 
+}
 
 
-// Versatile Applications Across Industries
-const slider = document.getElementById("industrySlider");
 
-document.getElementById("next").onclick = () => {
+// ---------------- INDUSTRY SLIDER ----------------
 
-slider.scrollLeft += 300;
+const industrySlider = document.getElementById("industrySlider");
+
+const nextBtn = document.getElementById("next");
+
+const prevBtn = document.getElementById("prev");
+
+if(industrySlider && nextBtn && prevBtn){
+
+nextBtn.onclick = () => {
+
+industrySlider.scrollLeft += 300;
 
 };
 
-document.getElementById("prev").onclick = () => {
+prevBtn.onclick = () => {
 
-slider.scrollLeft -= 300;
+industrySlider.scrollLeft -= 300;
 
 };
 
+}
 
 
 
-// Advanced HDPE Pipe Manufacturing Process section
+// ---------------- PROCESS TABS ----------------
+
 const tabs = document.querySelectorAll(".process-tabs button");
+
+if(tabs.length > 0){
 
 tabs.forEach(tab => {
 
 tab.addEventListener("click", () => {
 
 tabs.forEach(btn => btn.classList.remove("active"));
+
 tab.classList.add("active");
 
 });
 
 });
 
+}
 
 
-// Trusted Performance. Proven Results
-const sliders = document.getElementById("testimonialSlider");
+
+// ---------------- TESTIMONIAL AUTO SLIDER ----------------
+
+const testimonialSlider = document.getElementById("testimonialSlider");
+
+if(testimonialSlider){
 
 setInterval(()=>{
 
-sliders.scrollLeft += 340;
+if(testimonialSlider.scrollLeft >= testimonialSlider.scrollWidth - testimonialSlider.clientWidth){
+
+testimonialSlider.scrollLeft = 0;
+
+}else{
+
+testimonialSlider.scrollLeft += 340;
+
+}
 
 },3000);
 
-
-
-
-// Complete Piping Solutions Portfolio
+}
