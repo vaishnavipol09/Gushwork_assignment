@@ -1,0 +1,1828 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:white;
+border-bottom:1px solid #e5e7eb;
+padding:12px 0;
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 20px;
+}
+
+.logo img{
+height:50px;
+}
+
+/* MENU */
+
+.menu{
+display:flex;
+align-items:center;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#374151;
+font-size:14px;
+}
+
+.menu a:hover{
+color:#1f3a8a;
+}
+
+/* CONTACT BUTTON */
+
+.contact-btn{
+background:#1f3a8a;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:8px;
+cursor:pointer;
+font-size:14px;
+}
+
+.contact-btn:hover{
+background:#162c6b;
+}
+
+/* BREADCRUMB */
+
+.breadcrumb{
+padding:12px 0;
+}
+
+.breadcrumb-container{
+max-width:1200px;
+margin:auto;
+display:flex;
+align-items:center;
+gap:10px;
+padding:0 20px;
+font-size:14px;
+color:#6b7280;
+}
+
+.breadcrumb a{
+text-decoration:none;
+color:#6b7280;
+}
+
+.breadcrumb p{
+color:#374151;
+font-weight:bold;
+}
+
+/* CONTAINER */
+
+.product-wrapper{
+display:flex;
+gap:40px;
+align-items:flex-start;
+max-width:1200px;
+margin:auto;
+}
+
+/* IMAGE SECTION */
+
+.product-gallery{
+flex:1;
+}
+
+.main-image{
+position:relative;
+border-radius:16px;
+overflow:hidden;
+}
+
+.main-image img{
+width:100%;
+display:block;
+}
+
+.arrow{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+background:white;
+border:none;
+width:40px;
+height:40px;
+border-radius:50%;
+cursor:pointer;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.left{
+left:10px;
+}
+
+.right{
+right:10px;
+}
+
+.thumbnail-container{
+display:flex;
+gap:10px;
+margin-top:15px;
+}
+
+.thumbnail-container img{
+width:60px;
+height:60px;
+object-fit:cover;
+border-radius:8px;
+cursor:pointer;
+background:#eee;
+}
+
+/* RIGHT SIDE */
+
+.product-details{
+flex:1;
+}
+
+.badges span{
+background:#eef2ff;
+padding:6px 12px;
+border-radius:6px;
+margin-right:8px;
+font-size:12px;
+}
+
+.product-details h1{
+margin:15px 0;
+font-size:32px;
+line-height:1.3;
+color:#111827;
+}
+
+.features{
+margin-bottom:20px;
+}
+
+.features li{
+margin-bottom:8px;
+color:#374151;
+}
+
+.price-box{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+margin-bottom:20px;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.shipping{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+font-size:13px;
+margin-bottom:8px;
+}
+
+.shipping span{
+background:#fff7ed;
+padding:6px 10px;
+border-radius:6px;
+}
+
+.certification{
+font-size:13px;
+color:#6b7280;
+}
+
+/* BUTTONS */
+
+.product-buttons{
+display:flex;
+gap:15px;
+}
+
+.product-quote{
+background:#1e3a8a;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.product-specs{
+border:1px solid #1e3a8a;
+background:white;
+padding:12px 18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+
+/* TRUSTED SECTION */
+
+.trusted-section{
+margin-top:60px;
+padding:40px 20px;
+text-align:center;
+background:#f7f7f7;
+}
+
+.trusted-title{
+font-size:20px;
+color:#6b7280;
+margin-bottom:30px;
+}
+
+.trusted-logos{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.trusted-logos img{
+height:70px;
+opacity:0.7;
+transition:0.3s;
+}
+
+.trusted-logos img:hover{
+opacity:1;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.menu{
+gap:15px;
+}
+
+.contact-btn{
+padding:8px 14px;
+}
+
+}
+
+@media(max-width:500px){
+
+.nav-container{
+flex-direction:column;
+gap:10px;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.breadcrumb-container{
+font-size:12px;
+}
+
+}
+
+@media(max-width:1024px){
+
+.product-wrapper{
+flex-direction:column;
+}
+
+.product-details h1{
+font-size:26px;
+}
+
+}
+
+@media(max-width:600px){
+
+.thumbnail-container img{
+width:50px;
+height:50px;
+}
+
+.product-details h1{
+font-size:22px;
+}
+
+.buttons{
+flex-direction:column;
+}
+
+}
+
+@media(max-width:768px){
+
+.trusted-logos{
+gap:30px;
+}
+
+.trusted-logos img{
+height:24px;
+}
+
+}
+
+@media(max-width:480px){
+
+.trusted-logos{
+gap:20px;
+}
+
+.trusted-logos img{
+height:22px;
+}
+
+}
+
+
+
+/* Technical Specification Section */
+.tech-section{
+
+background:linear-gradient(180deg,#0f172a,#020617);
+padding:80px 20px;
+color:white;
+border-top:1px solid #e5e7eb;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.tech-container{
+
+max-width:1100px;
+margin:auto;
+
+}
+
+.tech-container h2{
+
+font-size:34px;
+margin-bottom:10px;
+
+}
+
+.tech-subtitle{
+
+color:#94a3b8;
+margin-bottom:40px;
+
+}
+
+.tech-table{
+
+background:rgba(255,255,255,0.05);
+border-radius:10px;
+overflow:hidden;
+
+}
+
+.table-row{
+
+display:grid;
+grid-template-columns:1fr 2fr;
+padding:16px 20px;
+border-bottom:1px solid rgba(255,255,255,0.1);
+column-gap:200px;
+
+}
+
+.table-header{
+
+background:rgba(255,255,255,0.08);
+font-weight:bold;
+font-size:13px;
+color:#cbd5f5;
+
+}
+
+.table-row:last-child{
+
+border-bottom:none;
+
+}
+
+.download-btn{
+
+margin-top:40px;
+padding:12px 22px;
+border-radius:8px;
+background:transparent;
+border:1px solid #94a3b8;
+color:white;
+cursor:pointer;
+transition:0.3s;
+display:block;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+.download-btn:hover{
+
+background:#1e293b;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.table-row{
+
+grid-template-columns:1fr;
+gap:6px;
+
+}
+
+.tech-container h2{
+
+font-size:26px;
+
+}
+
+}
+
+
+
+
+/* feature cards section */
+.features-section{
+
+background:#f7f7f7;
+padding:80px 20px;
+border-top:1px solid #e5e7eb;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.features-container{
+
+max-width:1200px;
+margin:auto;
+text-align:center;
+
+}
+
+.features-container h2{
+
+font-size:34px;
+margin-bottom:10px;
+
+}
+
+.features-subtitle{
+
+color:#6b7280;
+margin-bottom:50px;
+
+}
+
+/* GRID */
+
+.features-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+
+}
+
+/* CARD */
+
+.feature-card{
+
+background:white;
+padding:25px;
+border-radius:12px;
+text-align:left;
+border:1px solid #e5e7eb;
+transition:0.3s;
+
+}
+
+.feature-card:hover{
+
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+
+}
+
+/* ICON */
+
+.icon{
+
+font-size:22px;
+color:#3b4cca; 
+margin-bottom:10px;
+
+}
+
+.feature-card h3{
+
+font-size:16px;
+margin-bottom:10px;
+
+}
+
+.feature-card p{
+
+font-size:14px;
+color:#6b7280;
+
+}
+
+/* BUTTON */
+
+.quote-btn{
+
+margin-top:40px;
+padding:12px 24px;
+background:#3b4cca;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.features-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.features-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.features-container h2{
+
+font-size:26px;
+
+}
+
+}
+
+
+
+/* Frequently Asked Questions */
+.faq-section{
+
+padding:80px 20px;
+background:#f7f7f7;
+border-top:1px solid #e5e7eb;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.faq-container{
+
+max-width:1000px;
+margin:auto;
+
+}
+
+.faq-container h2{
+
+font-size:32px;
+margin-bottom:40px;
+
+}
+
+.faq-container h2 span{
+
+color:#3b4cca;
+
+}
+
+/* FAQ ITEM */
+
+.faq-item{
+
+background:white;
+border-radius:10px;
+margin-bottom:12px;
+border:1px solid #e5e7eb;
+overflow:hidden;
+
+}
+
+.faq-question{
+
+width:100%;
+background:none;
+border:none;
+padding:18px 20px;
+font-size:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:pointer;
+
+}
+
+.faq-answer{
+
+display:none;
+padding:0 20px 20px;
+color:#6b7280;
+font-size:14px;
+
+}
+
+.faq-item.active .faq-answer{
+
+display:block;
+
+}
+
+/* CATALOGUE BOX */
+
+.catalogue-box{
+
+margin-top:40px;
+background:white;
+padding:25px;
+border-radius:10px;
+border:1px solid #e5e7eb;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+
+}
+
+.catalogue-text h3{
+
+margin-bottom:5px;
+
+}
+
+.catalogue-text p{
+
+color:#6b7280;
+font-size:14px;
+
+}
+
+.catalogue-form{
+
+display:flex;
+gap:10px;
+
+}
+
+.catalogue-form input{
+
+padding:10px;
+border-radius:6px;
+border:1px solid #d1d5db;
+
+}
+
+.catalogue-form button{
+
+background:#3b4cca;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.catalogue-box{
+
+flex-direction:column;
+align-items:flex-start;
+
+}
+
+.catalogue-form{
+
+width:100%;
+
+}
+
+.catalogue-form input{
+
+flex:1;
+
+}
+
+}
+
+
+
+
+/* Versatile Applications Across Industries */
+.industry-section{
+
+padding:80px 20px;
+background:#f7f7f7;
+border-top:1px solid #e5e7eb;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.industry-header{
+
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+
+}
+
+.industry-header h2{
+
+font-size:32px;
+margin-bottom:10px;
+
+}
+
+.industry-header p{
+
+color:#6b7280;
+max-width:500px;
+font-size:12px;
+
+}
+
+/* ARROWS */
+
+.slider-buttons button{
+
+width:40px;
+height:40px;
+border-radius:50%;
+border:1px solid #d1d5db;
+background:white;
+cursor:pointer;
+margin-left:10px;
+
+}
+
+/* SLIDER */
+
+.industry-slider{
+
+display:flex;
+gap:20px;
+overflow-x:auto;
+scroll-behavior:smooth;
+padding-bottom:10px;
+
+}
+
+.industry-slider::-webkit-scrollbar{
+
+display:none;
+
+}
+
+/* CARD */
+
+.industry-card{
+
+min-width:280px;
+height:300px;
+border-radius:20px;
+overflow:hidden;
+position:relative;
+flex-shrink:0;
+
+}
+
+.industry-card img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+.card-content{
+
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+
+background:linear-gradient(transparent,rgba(0,0,0,0.7));
+
+color:white;
+padding:20px;
+
+}
+
+.card-content h3{
+
+margin-bottom:5px;
+
+}
+
+.card-content p{
+
+font-size:13px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.industry-header{
+
+flex-direction:column;
+align-items:flex-start;
+gap:15px;
+
+}
+
+}
+
+
+
+
+/* Advanced HDPE Pipe Manufacturing Process section */
+.process-section{
+
+padding:80px 20px;
+background:#f7f7f7;
+
+border-top:1px solid #e5e7eb;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.process-container{
+
+max-width:1100px;
+margin:auto;
+text-align:center;
+
+}
+
+.process-container h2{
+
+font-size:32px;
+margin-bottom:10px;
+
+}
+
+
+.process-subtitle{
+
+color:#6b7280;
+margin-bottom:40px;
+
+}
+
+/* CARD */
+
+.process-card{
+
+background:white;
+border-radius:12px;
+padding:30px;
+border:1px solid #e5e7eb;
+
+}
+
+
+/* TABS */
+
+.process-tabs{
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:center;
+margin-bottom:25px;
+
+}
+
+.process-tabs button{
+
+padding:8px 16px;
+border-radius:20px;
+border:1px solid #d1d5db;
+background:#f3f4f6;
+cursor:pointer;
+font-size:13px;
+
+}
+
+.process-tabs button.active{
+
+background:#3b4cca;
+color:white;
+
+}
+
+/* CONTENT */
+
+.process-content{
+
+display:flex;
+gap:30px;
+align-items:center;
+text-align:left;
+
+}
+
+.process-text{
+
+flex:1;
+
+}
+
+.process-text h3{
+
+margin-bottom:20px;
+
+}
+
+.process-text p{
+
+color:#6b7280;
+font-size:14px;
+margin-top:20px;
+}
+
+
+.process-list{
+
+list-style:none;
+padding-left:0;
+
+}
+
+.process-list li{
+
+position:relative;
+padding-left:28px;
+margin-top:20px;
+font-size:14px;
+
+}
+
+.process-list li::before{
+
+content:"✓";
+position:absolute;
+left:0;
+top:2px;
+
+width:18px;
+height:18px;
+
+background:#3b4cca;
+color:white;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:12px;
+
+}
+
+/* IMAGE */
+
+.process-image{
+
+flex:1;
+position:relative;
+
+}
+
+.process-image img{
+
+width:100%;
+border-radius:12px;
+
+}
+
+.arrow{
+
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+width:36px;
+height:36px;
+border-radius:50%;
+border:none;
+background:white;
+cursor:pointer;
+box-shadow:0 2px 6px rgba(0,0,0,0.2);
+
+}
+
+.left{
+
+left:10px;
+
+}
+
+.right{
+
+right:10px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.process-content{
+
+flex-direction:column;
+
+}
+
+.process-container h2{
+
+font-size:26px;
+
+}
+
+}
+
+
+
+
+/* Trusted Performance. Proven Results */
+.testimonial-section{
+
+padding:80px 20px;
+background:#f7f7f7;
+
+border-top:1px solid #e5e7eb;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.testimonial-container{
+
+max-width:1200px;
+margin:auto;
+text-align:center;
+
+}
+
+.testimonial-container h2{
+
+font-size:32px;
+margin-bottom:10px;
+
+}
+
+.testimonial-subtitle{
+
+color:#6b7280;
+margin-bottom:40px;
+
+}
+
+/* SLIDER */
+
+.testimonial-slider{
+
+display:flex;
+gap:20px;
+overflow-x:auto;
+scroll-behavior:smooth;
+
+}
+
+.testimonial-slider::-webkit-scrollbar{
+
+display:none;
+
+}
+
+/* CARD */
+
+.testimonial-card{
+
+min-width:320px;
+background:white;
+border-radius:12px;
+padding:25px;
+text-align:left;
+border:1px solid #e5e7eb;
+
+}
+
+/* QUOTE */
+
+.quote{
+
+font-size:40px;
+color:#3b4cca;
+margin-bottom:10px;
+
+}
+
+.testimonial-card h3{
+
+font-size:16px;
+margin-bottom:10px;
+
+}
+
+.testimonial-card p{
+
+font-size:14px;
+color:#6b7280;
+margin-bottom:20px;
+
+}
+
+/* USER */
+
+.testimonial-user{
+
+display:flex;
+align-items:center;
+gap:10px;
+
+}
+
+.user-img{
+
+width:40px;
+height:40px;
+background:#e5e7eb;
+border-radius:50%;
+
+}
+
+.testimonial-user span{
+
+display:block;
+font-size:12px;
+color:#6b7280;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.testimonial-card{
+
+min-width:260px;
+
+}
+
+}
+
+
+
+
+/* Complete Piping Solutions Portfolio */
+.portfolio-section{
+
+padding:80px 20px;
+background:#f7f7f7;
+
+border-top:1px solid #e5e7eb;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.portfolio-container{
+
+max-width:1200px;
+margin:auto;
+text-align:center;
+
+}
+
+.portfolio-container h2{
+
+font-size:32px;
+margin-bottom:10px;
+
+}
+
+.portfolio-subtitle{
+
+color:#6b7280;
+margin-bottom:40px;
+
+}
+
+/* GRID */
+
+.portfolio-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+
+}
+
+/* CARD */
+
+.portfolio-card{
+
+background:white;
+border-radius:12px;
+padding:20px;
+border:1px solid #e5e7eb;
+text-align:left;
+
+}
+
+.portfolio-card h3{
+
+margin-bottom:8px;
+
+}
+
+.portfolio-card p{
+
+font-size:14px;
+color:#6b7280;
+margin-top:15px;
+line-height: 20px;
+
+}
+
+.portfolio-card img{
+
+width:100%;
+border-radius:10px;
+margin-top:15px;
+
+}
+
+/* BUTTON */
+
+.learn-btn{
+
+width:100%;
+padding:10px;
+border-radius:8px;
+border:1px solid #d1d5db;
+background:#f3f4f6;
+cursor:pointer;
+margin-top:15px;
+
+}
+
+/* CTA BOX */
+
+.portfolio-cta{
+
+margin-top:40px;
+background:white;
+padding:20px;
+border-radius:10px;
+border:1px solid #e5e7eb;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.portfolio-highlight{
+
+color:blue;
+font-weight:bold;
+
+}
+
+.expert-btn{
+
+display:flex;
+align-items:center;
+gap:10px;
+
+background:#3b4cca;
+color:white;
+
+border:none;
+padding:10px 18px;
+
+border-radius:8px;
+cursor:pointer;
+
+font-size:14px;
+
+}
+
+/* ICON BOX */
+
+.icon-box{
+
+width:28px;
+height:28px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:6px;
+
+}
+
+.learn-btn{
+
+width:100%;
+padding:10px;
+
+border-radius:8px;
+border:1px solid #d1d5db;
+color: blue;
+
+background:#f3f4f6;
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.portfolio-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.portfolio-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.portfolio-cta{
+
+flex-direction:column;
+gap:15px;
+align-items:flex-start;
+
+}
+
+}
+
+
+
+
+/* Resources & Downloads */
+.resources-container{
+
+max-width:900px;
+margin:auto;
+text-align:center;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.resources-section{
+
+padding:70px 20px;
+
+}
+
+.resources-subtitle{
+
+color:#6b7280;
+margin-bottom:30px;
+
+}
+
+/* DOWNLOAD LIST */
+
+.resources-download-list{
+
+background:white;
+border-radius:10px;
+
+}
+
+.resources-download-item{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:14px 18px;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.resources-download-link{
+
+display:flex;
+align-items:center;
+gap:6px;
+
+color:#3b4cca;
+text-decoration:none;
+font-weight:500;
+
+}
+
+.resources-download-link i{
+
+font-size:14px;
+
+}
+
+
+
+/* Ready to Transform Your Textile Manufacturing */
+
+.Textile-Manufacturing-cta-section{
+    border-top:1px solid #e5e7eb;
+    order-bottom:1px solid #e5e7eb;
+    padding:80px 20px;
+
+}
+
+.Textile-Manufacturing-cta-container{
+
+max-width:1100px;
+margin:auto;
+
+background:#2f3b82;
+color:white;
+
+border-radius:20px;
+
+padding:40px;
+
+display:flex;
+justify-content:space-between;
+gap:40px;
+
+}
+
+.Textile-Manufacturing-cta-text{
+margin-top:30px;
+flex:1;
+font-size: 25px;
+
+}
+
+.Textile-Manufacturing-cta-text p{
+
+margin-top:30px;
+font-size: 14px;
+color:#d1d5db;
+
+}
+
+.Textile-Manufacturing-contact-info{
+
+margin-top:30px;
+
+}
+
+
+/* FORM */
+
+.Textile-Manufacturing-cta-form{
+
+background:white;
+color:black;
+
+padding:25px;
+
+border-radius:10px;
+
+width:320px;
+
+display:flex;
+flex-direction:column;
+gap:10px;
+
+}
+
+.Textile-Manufacturing-cta-form input{
+
+padding:10px;
+
+border:1px solid #d1d5db;
+
+border-radius:6px;
+
+}
+
+.phone-field{
+
+display:flex;
+gap:10px;
+
+}
+
+.country-code{
+
+padding:10px;
+border-radius:6px;
+
+border:1px solid #d1d5db;
+
+background:white;
+
+cursor:pointer;
+
+}
+
+.phone-field input{
+
+flex:1;
+
+padding:10px;
+
+border-radius:6px;
+border:1px solid #d1d5db;
+
+}
+
+.Textile-Manufacturing-cta-form button{
+
+background:#111827;
+
+color:white;
+
+padding:12px;
+
+border:none;
+
+border-radius:6px;
+
+cursor:pointer;
+
+}
+
+.Textile-Manufacturing-cta-divider{
+
+border:none;
+height:1px;
+
+background:rgba(255,255,255,0.3);
+
+margin:20px 0;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.Textile-Manufacturing-cta-container{
+
+flex-direction:column;
+
+}
+
+.Textile-Manufacturing-cta-form{
+
+width:100%;
+
+}
+
+}
+
+
+
+
+/* Footer Section */
+.footer{
+
+background:#f7f7f7;
+padding:60px 40px 20px;
+
+}
+
+/* TOP BOX */
+
+.footer-top{
+
+display:flex;
+justify-content:center;
+margin-bottom:40px;
+
+}
+
+.footer-brand{
+
+background:white;
+border:1px solid #e5e7eb;
+border-radius:14px;
+font-size: 20px;
+padding:20px 30px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+width:100%;
+max-width:1100px;
+
+}
+
+.footer-brand img{
+
+height:50px;
+
+}
+
+.footer-brand span{
+
+color:#3b4cca;
+font-weight:600;
+
+}
+
+/* MAIN FOOTER */
+
+.footer-main{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+
+gap:40px;
+
+max-width:1100px;
+margin:auto;
+
+}
+
+.footer-col h4{
+
+margin-bottom:15px;
+
+}
+
+.footer-col ul{
+
+list-style:none;
+padding:0;
+
+}
+
+.footer-col li{
+
+margin-bottom:15px;
+color:#6b7280;
+font-size: 14px;
+
+}
+
+.footer-col a{
+
+text-decoration:none;
+color:#6b7280;
+
+}
+
+/* CONTACT */
+
+.contact-info p{
+
+display:flex;
+align-items:flex-start;
+gap:8px;
+margin-bottom:15px;
+font-size: 14px;
+}
+
+.contact-info i{
+
+color:#3b4cca;   /* blue icon color */
+margin-right:8px;
+margin-bottom:15px;
+font-size: 14px;
+}
+
+/* SOCIAL */
+
+.social-icons i{
+
+color:#3b4cca;
+font-size:18px;
+
+}
+
+/* BOTTOM */
+
+.footer-bottom{
+
+border-top:1px solid #e5e7eb;
+
+margin-top:40px;
+padding-top:15px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+max-width:1100px;
+margin-left:auto;
+margin-right:auto;
+
+font-size:13px;
+color:#6b7280;
+
+}
+
+.footer-links{
+
+display:flex;
+gap:20px;
+
+}
+
+.footer-links a{
+
+text-decoration:none;
+color:#6b7280;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.footer-main{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.footer-main{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+gap:10px;
+
+}
+
+}
